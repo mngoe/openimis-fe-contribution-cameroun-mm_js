@@ -6,7 +6,6 @@ import {
 import {
     NumberInput,
     PublishedComponent,
-    FormPanel
 } from "@openimis/fe-core";
 
 const styles = theme => ({
@@ -24,7 +23,7 @@ class PaymentMobile extends Component {
             <Grid container>
                 <Grid item xs={3} className={classes.item}>
                     <PublishedComponent
-                        pubRef="paymentCmr.PaymentOperatorPicker"
+                        pubRef="contributionCmr.PaymentOperatorPicker"
                         withNull={true}
                         required={required}
                         readOnly={readOnly}
@@ -34,7 +33,7 @@ class PaymentMobile extends Component {
                 </Grid>
                 <Grid item xs={3} className={classes.item}>
                     <NumberInput
-                        module="paymentCmr"
+                        module="contributionCmr"
                         label="Payment.paymentNumber"
                         required={required}
                         readOnly={readOnly}

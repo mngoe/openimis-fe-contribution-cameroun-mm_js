@@ -26,19 +26,19 @@ var _getPrototypeOf__default = /*#__PURE__*/_interopDefaultLegacy(_getPrototypeO
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 var messages_en = {
-	"paymentCmr.Payment.paymentNumber": "Mobile Phone",
-	"paymentCmr.Payment.operator": "Network operator",
-	"paymentCmr.Payment.operator.O": "Orange Money",
-	"paymentCmr.Payment.operator.M": "MTN Mobile money",
-	"paymentCmr.Payment.operator.null": "Any"
+	"contributionCmr.Payment.paymentNumber": "Mobile Phone",
+	"contributionCmr.Payment.operator": "Network operator",
+	"contributionCmr.Payment.operator.O": "Orange Money",
+	"contributionCmr.Payment.operator.M": "MTN Mobile money",
+	"contributionCmr.Payment.operator.null": "Any"
 };
 
 var messages_fr = {
-	"paymentCmr.Payment.paymentNumber": "Numéro de téléphone",
-	"paymentCmr.Payment.operator": "Opérateur réseau",
-	"paymentCmr.Payment.operator.O": "Orange Money",
-	"paymentCmr.Payment.operator.M": "MTN Mobile money",
-	"paymentCmr.Payment.operator.null": "Tout"
+	"contributionCmr.Payment.paymentNumber": "Numéro de téléphone",
+	"contributionCmr.Payment.operator": "Opérateur réseau",
+	"contributionCmr.Payment.operator.O": "Orange Money",
+	"contributionCmr.Payment.operator.M": "MTN Mobile money",
+	"contributionCmr.Payment.operator.null": "Tout"
 };
 
 var PAYMENT_OPERATORS = ["O", "M"];
@@ -56,7 +56,7 @@ var PaymentOperatorPicker = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/React__default["default"].createElement(feCore.ConstantBasedPicker, _extends__default["default"]({
-        module: "paymentCmr",
+        module: "contributionCmr",
         label: "Payment.operator",
         constants: PAYMENT_OPERATORS
       }, this.props));
@@ -96,7 +96,7 @@ var PaymentMobile = /*#__PURE__*/function (_Component) {
         xs: 3,
         className: classes.item
       }, /*#__PURE__*/React__default["default"].createElement(feCore.PublishedComponent, {
-        pubRef: "paymentCmr.PaymentOperatorPicker",
+        pubRef: "contributionCmr.PaymentOperatorPicker",
         withNull: true,
         required: required,
         readOnly: readOnly,
@@ -109,7 +109,7 @@ var PaymentMobile = /*#__PURE__*/function (_Component) {
         xs: 3,
         className: classes.item
       }, /*#__PURE__*/React__default["default"].createElement(feCore.NumberInput, {
-        module: "paymentCmr",
+        module: "contributionCmr",
         label: "Payment.paymentNumber",
         required: required,
         readOnly: readOnly,
@@ -135,14 +135,14 @@ var DEFAULT_CONFIG = {
     messages: messages_fr
   }],
   "refs": [{
-    key: "paymentCmr.PaymentOperatorPicker",
+    key: "contributionCmr.PaymentOperatorPicker",
     ref: PaymentOperatorPicker
   }]
 };
-var PaymentCmrModule = function PaymentCmrModule(cfg) {
+var ContributionCmrModule = function ContributionCmrModule(cfg) {
   return _objectSpread(_objectSpread({}, DEFAULT_CONFIG), cfg);
 };
 
-exports.PaymentCmrModule = PaymentCmrModule;
+exports.ContributionCmrModule = ContributionCmrModule;
 exports.PaymentMobile = PaymentMobile$1;
 //# sourceMappingURL=index.js.map

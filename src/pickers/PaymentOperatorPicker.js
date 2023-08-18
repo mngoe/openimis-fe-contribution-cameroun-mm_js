@@ -7,7 +7,7 @@ class PaymentOperatorPicker extends Component {
 
     render() {
         return <ConstantBasedPicker
-            module="paymentCmr"
+            module="contributionCmr"
             label="Payment.operator"
             constants={PAYMENT_OPERATORS}
             {...this.props}
