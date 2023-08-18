@@ -1,0 +1,7 @@
+{
+    "contributionCmr.Payment.paymentNumber": "Mobile Phone",
+    "contributionCmr.Payment.operator": "Network operator",
+    "contributionCmr.Payment.operator.O": "Orange Money",
+    "contributionCmr.Payment.operator.M": "MTN Mobile money",
+    "contributionCmr.Payment.operator.null": "Any"
+}
