@@ -100,9 +100,9 @@ var PaymentMobile = /*#__PURE__*/function (_Component) {
         withNull: true,
         required: required,
         readOnly: readOnly,
-        value: !edited ? "" : edited.operator,
+        value: !edited ? "" : edited.networkOperator,
         onChange: function onChange(c) {
-          return updateAttribute('operator', c);
+          return updateAttribute('networkOperator', c);
         }
       })), /*#__PURE__*/React__default["default"].createElement(core.Grid, {
         item: true,

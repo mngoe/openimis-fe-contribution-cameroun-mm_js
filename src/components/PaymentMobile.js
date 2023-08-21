@@ -27,8 +27,8 @@ class PaymentMobile extends Component {
                         withNull={true}
                         required={required}
                         readOnly={readOnly}
-                        value={!edited ? "" : edited.operator}
-                        onChange={c => updateAttribute('operator', c)}
+                        value={!edited ? "" : edited.networkOperator}
+                        onChange={c => updateAttribute('networkOperator', c)}
                     />
                 </Grid>
                 <Grid item xs={3} className={classes.item}>
