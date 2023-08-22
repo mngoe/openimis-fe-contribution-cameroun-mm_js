@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { ConstantBasedPicker } from "@openimis/fe-core";
 
-import { PAYMENT_OPERATORS } from "../constants";
+import { PREMIUM_CATEGORIES } from "../constants";
 
-class PaymentOperatorPicker extends Component {
+class PremiumCategoryPicker extends Component {
 
     render() {
         return <ConstantBasedPicker
             module="contribution"
-            label="Payment.operator"
-            constants={PAYMENT_OPERATORS}
+            label="contribution.category"
+            constants={PREMIUM_CATEGORIES}
             {...this.props}
         />
     }
 }
 
-export default PaymentOperatorPicker;
+export default PremiumCategoryPicker;

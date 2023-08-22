@@ -1,7 +1,7 @@
 {
-    "contributionCmr.Payment.paymentNumber": "Numéro de téléphone",
-    "contributionCmr.Payment.operator": "Opérateur réseau",
-    "contributionCmr.Payment.operator.O": "Orange Money",
-    "contributionCmr.Payment.operator.M": "MTN Mobile money",
-    "contributionCmr.Payment.operator.null": "Tout"
+    "contribution.Payment.paymentNumber": "Numéro de téléphone",
+    "contribution.Payment.operator": "Opérateur réseau",
+    "contribution.Payment.operator.O": "Orange Money",
+    "contribution.Payment.operator.M": "MTN Mobile money",
+    "contribution.Payment.operator.null": "Tout"
 }
